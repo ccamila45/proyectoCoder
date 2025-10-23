@@ -1,0 +1,32 @@
+@use "../generales/variables" as *;
+/*css historia-------------------------------*/
+/*introducción*/
+.intro{
+    @include intro;
+}
+
+/*secciones*/
+.hist-secciones{
+    background-color: $blancoHumo;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+
+    img{
+        width: 400px;
+    }
+    div{
+        h3{
+            font-family: $tipoCuerpo;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        ul{
+            li{
+                font-family: $tipoCuerpo;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}

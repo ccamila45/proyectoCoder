@@ -1,0 +1,42 @@
+@use "../generales/variables" as *;
+/*css competencias----------------------------*/
+/*introducción*/
+.intro{
+    @include intro;
+}
+
+/*secciones*/
+.comp-seccion{
+    background-color: $blancoHumo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+
+    img{
+        width: 400px;
+        display: flex;
+        align-self: flex-end;
+    }
+    div{
+        max-width: 600px;
+        h3{
+            font-family: $tipoCuerpo;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        p{
+            font-family: $tipoCuerpo;
+            font-size: 1rem;
+            color: $negroCarbon;
+        }
+        a{
+            font-family: $tipoCuerpo;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: $rojoVibrante;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@use "./generales/reset";
+@use "./generales/variables";
+
+@use "./generales/headerFooter";
+
+@use "./pages/index";
+@use "./pages/competencias";
+@use "./pages/tecnología";
+@use "./pages/historia";
+@use "./pages/nosotros";
+
+@use "./generales/mediaQ";

@@ -1,0 +1,28 @@
+@use "../generales/variables" as *;
+/*css tecnologia---------------------------------*/
+/*introducción*/
+.intro{
+    @include intro;
+}
+
+/*secciones*/
+.tecno-secciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    gap: 20px;
+
+    .tecno-seccion{
+        h3{
+            font-family: $tipoCuerpo;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        ul{
+            li{
+                font-family: $tipoCuerpo;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}

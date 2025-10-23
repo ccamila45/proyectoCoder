@@ -1,0 +1,110 @@
+@use "../generales/variables" as *;
+/*css index-------------------------------------------*/
+/*sección principal*/
+.home-hero{
+    background-color: $negroCarbon;
+    height: 1061px;
+    background-image: url('../medios/foto1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        font-family: $tipoCuerpo;
+        color: $blancoHumo;
+    }
+    h1{
+        font-family: $tipoDecor;
+        font-size: 5rem;
+        font-weight: 800;
+        color: $blancoHumo;
+    }
+    h4{
+        font-family: $tipoCuerpo;
+        color: $blancoHumo;
+        width: 800px;
+    }
+    p{
+        font-family: $tipoCuerpo;
+        font-size: 1rem;
+        color: $blancoHumo;
+
+        margin-top: auto;
+        width: 700px;
+    }
+}
+
+/*sección introducción*/
+.home-intro {
+    background-color: $negroCarbon;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+
+        .card{
+            background-color: $blancoHumo;
+            border: 0.5px solid $negroCarbon;
+            border-radius: 16px;
+            overflow: hidden;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+
+            img{
+                height: 250px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .card-body{
+                padding: 16px 20px 20px 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h3{
+                    font-family: $tipoCuerpo;
+                    font-weight: bold;
+                    font-size: 2rem;
+                }
+                p{
+                    font-family: $tipoCuerpo;
+                    font-size: 0.875rem;
+                }
+                a{
+                    font-family: $tipoCuerpo;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*sección final*/
+.home-cierre_final{
+    height: 200px;
+    background-color: $blancoHumo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        width: 600px;
+        font-family: $tipoDecor;
+        font-weight: 800;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}

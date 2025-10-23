@@ -1,0 +1,36 @@
+/*sass variables--------------------------------------*/
+/* paleta cromática */
+$negroCarbon: #121212;
+$grisGrafito: #1e1e1e;
+$blancoHumo: #f5f5f5;
+$rojoVibrante: #e10600;
+$amarillo: #ffd700;
+$naranja: #ff6b00;
+
+/* tipografías */
+$tipoTecnica: 'Share Tech Mono', monospace;
+$tipoDecor: 'Audiowide', sans-serif;
+$tipoCuerpo: 'Inter', sans-serif;
+
+/*introducciones grales*/
+@mixin intro {
+    height: 200px;
+    padding: 40px;
+    background-color: $negroCarbon;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-family: $tipoDecor;
+        color: $blancoHumo;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    h3{
+        width: 1050px;
+        font-family: $tipoCuerpo;
+        color: $blancoHumo;
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+}
